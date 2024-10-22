@@ -1,0 +1,149 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0e5ec; /* Light background for Neumorphism */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px; /* Rounded corners */
+    background: #e0e5ec; /* Light background for Neumorphism */
+    box-shadow: 20px 20px 60px #c6c6c6, /* Darker shadow */
+                -20px -20px 60px #ffffff; /* Lighter highlight */
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #005F73; /* Updated text color */
+}
+
+.editor-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.editor {
+    background: #e0e5ec; /* Light background for Neumorphism */
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 10px 10px 20px #c6c6c6, /* Darker shadow */
+                -10px -10px 20px #ffffff; /* Lighter highlight */
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 10px #c6c6c6, /* Darker inset shadow */
+                inset -5px -5px 10px #ffffff; /* Lighter inset highlight */
+    background: #e0e5ec; /* Light textarea background */
+    color: #333333; /* Text color */
+    resize: none;
+    font-family: 'Courier New', Courier, monospace; /* Monospace font for code */
+}
+
+.preview-container {
+    margin-top: 20px;
+    padding: 15px; /* Added padding */
+    background: #e0e5ec; /* Same background color as the container */
+    border: 2px solid #005F73; /* Border color */
+    border-radius: 10px; /* Rounded corners */
+    color: white; /* Changed text color to white */
+}
+
+#preview {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 15px;
+}
+
+.social-share {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.social-share a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    background-color: #005F73; /* Button background color */
+    padding: 10px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    box-shadow: 5px 5px 15px #c6c6c6, /* Darker shadow */
+                -5px -5px 15px #ffffff; /* Lighter highlight */
+}
+
+.fullscreen-button {
+    background-color: transparent;
+    border: none;
+    color: #005F73;
+    cursor: pointer;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.save-button {
+    background-color: #005F73; /* Save button color */
+    color: white;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    box-shadow: 5px 5px 15px #c6c6c6, /* Darker shadow */
+                -5px -5px 15px #ffffff; /* Lighter highlight */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+.save-button:hover {
+    transform: translateY(-2px); /* Lift effect on hover */
+    box-shadow: 3px 3px 10px #c6c6c6, /* Darker shadow */
+                -3px -3px 10px #ffffff; /* Lighter highlight */
+}
+
+.footer {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #333333; /* Dark text color */
+}
+
+.projects-section {
+    margin-top: 20px;
+    text-align: left;
+    padding: 15px;
+    background: #e0e5ec; /* Light background for Neumorphism */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0px 0px 15px #ffffff; /* Updated shadow to white */
+}

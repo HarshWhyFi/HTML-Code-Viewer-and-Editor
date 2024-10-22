@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A live code editor to write HTML, CSS, and JavaScript with instant preview.">
+    <title>Live Code Editor</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" defer></script> <!-- Font Awesome CDN for icons -->
+    <script src="script.js" defer></script> <!-- Link to JavaScript file -->
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_s2GcRHWvKiztTQtmw1LHKLAMSWJLxDiggqvGkLr-cFaGYk_sNTMgYcdZ0IoWKanMvsbUTGPPgX60OGdPLNijkkcQweaYvxSZjaQOg5EwJJFazQgYZf48FUPKavV7pXnovtfNE7BGoGfNjp6sMrC4cc1Jv_UUcVjhF9uv3Xl9rG9grLvV9uVmvdia-nMu/s3264/20241010_073813.png" alt="Live Code Editor Image">
+
+        <!-- Fullscreen Button -->
+        <button id="fullscreenButton" class="fullscreen-button">
+            <i class="fas fa-expand"></i>
+        </button>
+
+        <div class="editor-container">
+            <div class="editor">
+                <h2>HTML <i class="fas fa-search"></i></h2>
+                <textarea id="htmlCode" placeholder="Write your HTML code here..."></textarea>
+            </div>
+            <div class="editor">
+                <h2>CSS <i class="fas fa-search"></i></h2>
+                <textarea id="cssCode" placeholder="Write your CSS code here..."></textarea>
+            </div>
+            <div class="editor">
+                <h2>JavaScript <i class="fas fa-search"></i></h2>
+                <textarea id="jsCode" placeholder="Write your JavaScript code here..."></textarea>
+            </div>
+        </div>
+
+        <div class="preview-container">
+            <h2>Preview</h2>
+            <iframe id="preview" sandbox="allow-scripts"></iframe>
+        </div>
+
+        <div class="social-share">
+            <a href="https://twitter.com/share?text=Check out this Live Code Editor!&url=http://yourwebsite.com" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http://yourwebsite.com" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/harshsharma_33?igsh=enVpbmZpeXk2Zmg3" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+        <!-- Save Project Button -->
+        <button id="saveButton" class="save-button">
+            Save Project
+        </button>
+
+        <!-- Saved Projects Section -->
+        <div class="projects-section">
+            <h2>Saved Projects</h2>
+            <div id="projectsContainer"></div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 All Rights Reserved | Harsh Sharma</p>
+        </div>
+    </div>
+</body>
+
+</html>
